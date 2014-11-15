@@ -1,0 +1,13 @@
+{% include 'header.twig' %}
+
+<h1>2FA authentication</h1>
+
+<p>Enter the code from Google Authenticator to complete login:</p>
+<form method="POST" action="/auth2fa" role="form" class="form-inline">
+    <div class="form-group">
+            <input type="text" class="form-control" id="code" name="code" style="width: 10em" maxlength="6">
+        <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+</form>
+
+{% include 'footer.twig' %}

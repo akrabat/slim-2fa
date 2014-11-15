@@ -1,0 +1,18 @@
+{% include 'header.twig' %}
+
+<h1>Home page</h1>
+
+{% if flash.message %}
+<div class="alert alert-success alert-dismissable fade in ">
+    <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+    </button>
+    {{ flash.message }}
+</div>
+{% endif %}
+
+<p>
+    This is the home page.
+</p>
+
+{% include 'footer.twig' %}

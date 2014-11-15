@@ -1,0 +1,32 @@
+{% include 'header.twig' %}
+
+<h1>Set up 2FA</h1>
+
+<p>It's a good idea to set up 2FA!</p>
+
+{% if flash.error %}
+<div class="alert alert-danger alert-dismissable fade in ">
+    <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+    </button>
+    {{ flash.error }}
+</div>
+{% endif %}
+
+<p>Scan this code into Google Authenticator</p>
+<img src="{{ qrCodeUrl }}">
+
+
+
+<p style="margin-top: 1em">or enter this code: <tt>{{ secret }}</tt></p>
+
+
+<p><strong>Enter code from Google Authenticator to confirm:</strong></p>
+<form method="POST" action="/setup2fa" role="form" class="form-inline">
+    <div class="form-group">
+            <input type="text" class="form-control" id="code" name="code" style="width: 10em" maxlength="6">
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </div>
+</form>
+
+{% include 'footer.twig' %}
