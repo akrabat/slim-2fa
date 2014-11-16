@@ -40,7 +40,7 @@ sql;
                 WHERE id = ?
 sql;
             $sth = $this->dbh->prepare($sql);
-LDBG( $sth);
+
             $sth->execute([$user->getUsername(), $user->getPassword(), $user->getSecret(), $user->getId()]);
         } else {
             throw new \Exception("Creating new users is not implemented yet!");
