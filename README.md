@@ -17,3 +17,11 @@ Authenticator.
 * Logout
 * Login again using `rob`/`password`
 * Entire Google Authenticator code in order to complete the login process.
+
+
+## Exercises for the reader
+
+In a real app you should add the following:
+
+* Prevent brute force attacks on the login form and the Authenticator code form.
+* Consider adding a "remember this browser" feature to the 2FA form for user convienience.
