@@ -8,7 +8,7 @@ Authenticator.
 
 * Copy `data/2fa.db.dist` to `data/2fa.db`
 * `php -S 0.0.0.0:8888 public/index.php`
-* Navigate to http://localhost:88888
+* Navigate to http://localhost:8888
   
 ## Usage
 
