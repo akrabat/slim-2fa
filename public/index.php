@@ -117,7 +117,6 @@ $app->get('/setup2fa', function () use ($app) {
 
 $app->post('/setup2fa', function () use ($app) {
     $secret = $app->environment['slim.flash']['secret'];
-    $time   = floor(time() / 30);
     $code   = $app->request->post('code');
 
     $g = new \Google\Authenticator\GoogleAuthenticator();
@@ -145,7 +144,6 @@ $app->get('/auth2fa', function () use ($app) {
 $app->post('/auth2fa', function () use ($app) {
     $user   = $_SESSION['user_in_progress'];
     $secret = $user->getSecret();
-    $time   = floor(time() / 30);
     $code   = $app->request->post('code');
 
     $g = new \Google\Authenticator\GoogleAuthenticator();
