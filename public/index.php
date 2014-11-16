@@ -1,5 +1,5 @@
 <?php
-require '../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 session_cache_limiter(false);
 session_start();
@@ -7,7 +7,7 @@ session_start();
 // Prepare app
 $app = new \Slim\Slim([
     'mode' => 'development',
-    'templates.path' => '../templates',
+    'templates.path' => __DIR__ . '/../templates',
     'db' => [
         'dsn' => 'sqlite:' . realpath(__DIR__ . '/../data/2fa.db'),
     ],
