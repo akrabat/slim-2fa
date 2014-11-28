@@ -4,3 +4,4 @@
 /templates/cache/*
 !/templates/cache/README.md
 .DS_STORE
+data/2fa.db
