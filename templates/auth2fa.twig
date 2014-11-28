@@ -2,6 +2,15 @@
 
 <h1>2FA authentication</h1>
 
+{% if flash.error %}
+<div class="alert alert-danger alert-dismissable fade in ">
+    <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+    </button>
+    {{ flash.error }}
+</div>
+{% endif %}
+
 <p>Enter the code from Google Authenticator to complete login:</p>
 <form method="POST" action="/auth2fa" role="form" class="form-inline">
     <div class="form-group">
