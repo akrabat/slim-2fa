@@ -6,8 +6,9 @@ Authenticator.
 
 ## Get going
 
+* `composer install`
 * Copy `data/2fa.db.dist` to `data/2fa.db`
-* `php -S 0.0.0.0:8888 public/index.php`
+* `php -S 0.0.0.0:8888 -t public/ public/index.php`
 * Navigate to http://localhost:8888
   
 ## Usage
