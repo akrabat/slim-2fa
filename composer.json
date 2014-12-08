@@ -17,11 +17,13 @@
         "slim/slim": "2.*",
         "slim/views": "0.*",
         "twig/twig": "1.*",
-        "sonata-project/google-authenticator": "~1.0"
+        "sonata-project/google-authenticator": "~1.0",
+        "nineteenfeet/nf-number-to-word": "~1.0"
     },
     "autoload": {
         "psr-4": {
-            "RKA\\" : "RKA"
+            "RKA\\" : "RKA",
+            "AJH\\" : "AJH"
         }
     }
 }
