@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8c82f52bf04958cf2ea9101eda83ad1f",
+    "hash": "2d0a57087ddeab4617fe09642d1b3c99",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -77,54 +77,6 @@
                 "psr-3"
             ],
             "time": "2014-09-30 13:30:58"
-        },
-        {
-            "name": "nineteenfeet/nf-number-to-word",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/19ft/NFNumberToWord.git",
-                "reference": "7cabf77a693a68cdebf57c69b9ff0d029c271ee5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/19ft/NFNumberToWord/zipball/7cabf77a693a68cdebf57c69b9ff0d029c271ee5",
-                "reference": "7cabf77a693a68cdebf57c69b9ff0d029c271ee5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "./Module.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rob Allen",
-                    "email": "rob@19ft.com",
-                    "homepage": "http://19ft.com"
-                }
-            ],
-            "description": "ZF2 view helper to convert a number into its word representation. e.g. 1 => one",
-            "homepage": "http://github.com/nineteenfeet/NFNumberToWord",
-            "keywords": [
-                "conversion",
-                "number",
-                "view",
-                "view-helper",
-                "word",
-                "zend",
-                "zend-framework",
-                "zf2"
-            ],
-            "time": "2014-12-04 12:08:36"
         },
         {
             "name": "psr/log",
