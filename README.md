@@ -17,7 +17,7 @@ Authenticator.
 * Register the QR code with Google Authenticator & enter the confirmation code
 * Logout
 * Login again using `rob`/`password`
-* Entire Google Authenticator code in order to complete the login process.
+* Enter the Google Authenticator code in order to complete the login process.
 
 
 ## Exercises for the reader
